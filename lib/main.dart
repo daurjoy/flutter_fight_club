@@ -197,22 +197,19 @@ class Button extends StatefulWidget {
 class _ButtonState extends State<Button> {
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: SizedBox(
-        height: 40,
-        child: ColoredBox(
-          color: const Color.fromRGBO(28, 121, 206, 1),
-          child: Center(
-              child: Text(
-            'Go'.toUpperCase(),
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.w900,
-            ),
-          )),
-        ),
+    return SizedBox(
+      height: 40,
+      child: ColoredBox(
+        color: const Color.fromRGBO(28, 121, 206, 1),
+        child: Center(
+            child: Text(
+          'Go'.toUpperCase(),
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 16,
+            fontWeight: FontWeight.w900,
+          ),
+        )),
       ),
     );
   }
